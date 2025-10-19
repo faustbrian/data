@@ -1,0 +1,175 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Method Cline\\Data\\Casts\\ArrayToKeysCast\:\:cast\(\) has parameter \$context with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Casts/ArrayToKeysCast.php
+
+		-
+			message: '#^Method Cline\\Data\\Casts\\ArrayToListCast\:\:cast\(\) has parameter \$context with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Casts/ArrayToListCast.php
+
+		-
+			message: '#^Method Cline\\Data\\Casts\\Base64Cast\:\:cast\(\) has parameter \$context with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Casts/Base64Cast.php
+
+		-
+			message: '#^Method Cline\\Data\\Casts\\BooleanLikeCast\:\:cast\(\) has parameter \$context with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Casts/BooleanLikeCast.php
+
+		-
+			message: '#^Method Cline\\Data\\Casts\\CarbonImmutableCast\:\:cast\(\) has parameter \$context with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Casts/CarbonImmutableCast.php
+
+		-
+			message: '#^Method Cline\\Data\\Casts\\CeilCast\:\:cast\(\) has parameter \$context with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Casts/CeilCast.php
+
+		-
+			message: '#^Method Cline\\Data\\Casts\\FloorCast\:\:cast\(\) has parameter \$context with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Casts/FloorCast.php
+
+		-
+			message: '#^Method Cline\\Data\\Casts\\JsonDecodeCast\:\:cast\(\) has parameter \$context with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Casts/JsonDecodeCast.php
+
+		-
+			message: '#^Parameter \$depth of function json_decode expects int\<1, max\>, int given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Casts/JsonDecodeCast.php
+
+		-
+			message: '#^Method Cline\\Data\\Casts\\LowerCaseCast\:\:cast\(\) has parameter \$context with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Casts/LowerCaseCast.php
+
+		-
+			message: '#^Method Cline\\Data\\Casts\\NumberLikeCast\:\:cast\(\) has parameter \$context with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Casts/NumberLikeCast.php
+
+		-
+			message: '#^Method Cline\\Data\\Casts\\ReplaceCast\:\:cast\(\) has parameter \$context with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Casts/ReplaceCast.php
+
+		-
+			message: '#^Method Cline\\Data\\Casts\\RoundCast\:\:cast\(\) has parameter \$context with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Casts/RoundCast.php
+
+		-
+			message: '#^Parameter \#3 \$mode of function round expects 1\|2\|3\|4\|RoundingMode, int given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Casts/RoundCast.php
+
+		-
+			message: '#^Method Cline\\Data\\Casts\\SanitizeCast\:\:cast\(\) has parameter \$context with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Casts/SanitizeCast.php
+
+		-
+			message: '#^Method Cline\\Data\\Casts\\SlugCast\:\:cast\(\) has parameter \$context with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Casts/SlugCast.php
+
+		-
+			message: '#^Method Cline\\Data\\Casts\\StringLikeCast\:\:cast\(\) has parameter \$context with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Casts/StringLikeCast.php
+
+		-
+			message: '#^Method Cline\\Data\\Casts\\SubstrCast\:\:cast\(\) has parameter \$context with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Casts/SubstrCast.php
+
+		-
+			message: '#^Method Cline\\Data\\Casts\\TrimCast\:\:cast\(\) has parameter \$context with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Casts/TrimCast.php
+
+		-
+			message: '#^Method Cline\\Data\\Casts\\UpperCaseCast\:\:cast\(\) has parameter \$context with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Casts/UpperCaseCast.php
+
+		-
+			message: '#^Method Cline\\Data\\Casts\\UrlDecodeCast\:\:cast\(\) has parameter \$context with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Casts/UrlDecodeCast.php
+
+		-
+			message: '#^Method Cline\\Data\\Casts\\UrlEncodeCast\:\:cast\(\) has parameter \$context with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Casts/UrlEncodeCast.php
+
+		-
+			message: '#^Method Cline\\Data\\Core\\AbstractValidatedData\:\:factory\(\) has parameter \$creationContext with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Core/AbstractValidatedData.php
+
+		-
+			message: '#^Method Cline\\Data\\Core\\AbstractValidatedData\:\:factory\(\) return type with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContextFactory does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Core/AbstractValidatedData.php
+
+		-
+			message: '#^Method Cline\\Data\\Core\\AbstractValidatedDataTransferObject\:\:factory\(\) has parameter \$creationContext with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Core/AbstractValidatedDataTransferObject.php
+
+		-
+			message: '#^Method Cline\\Data\\Core\\AbstractValidatedDataTransferObject\:\:factory\(\) return type with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContextFactory does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Core/AbstractValidatedDataTransferObject.php
+
+		-
+			message: '#^Method Cline\\Data\\Pipes\\CastPrimitivePropertiesDataPipe\:\:handle\(\) has parameter \$creationContext with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Pipes/CastPrimitivePropertiesDataPipe.php
+
+		-
+			message: '#^Method Cline\\Data\\Pipes\\ReplaceEmptyStringsWithNullDataPipe\:\:handle\(\) has parameter \$creationContext with generic class Spatie\\LaravelData\\Support\\Creation\\CreationContext but does not specify its types\: TData$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Pipes/ReplaceEmptyStringsWithNullDataPipe.php
+
+		-
+			message: '#^Trait Cline\\Data\\Traits\\MarkupSerializationTrait is used zero times and is not analysed\.$#'
+			identifier: trait.unused
+			count: 1
+			path: src/Traits/MarkupSerializationTrait.php
