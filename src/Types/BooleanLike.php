@@ -48,15 +48,11 @@ final readonly class BooleanLike
 {
     /**
      * Default patterns recognized as truthy values.
-     *
-     * @var array<int, string>
      */
     public const array DEFAULT_TRUTHY = ['1', 'true', 'yes', 'y', 'on'];
 
     /**
      * Default patterns recognized as falsy values.
-     *
-     * @var array<int, string>
      */
     public const array DEFAULT_FALSY = ['0', 'false', 'no', 'n', 'off'];
 

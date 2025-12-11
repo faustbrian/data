@@ -72,7 +72,7 @@ final class CastPrimitivePropertiesDataPipe implements DataPipe
 
             // Get the first matching type from the property's type definition
             // This respects union type order (e.g., string|int will prefer string)
-            $targetType = self::getFirstMatchingType($dataProperty);
+            $targetType = $this->getFirstMatchingType($dataProperty);
 
             if ($targetType === null) {
                 continue;
@@ -87,7 +87,7 @@ final class CastPrimitivePropertiesDataPipe implements DataPipe
             } elseif ($targetType === 'int') {
                 $properties[$name] = (int) $value; // @phpstan-ignore cast.int
             } elseif ($targetType === 'string') {
-                $properties[$name] = self::castToString($value);
+                $properties[$name] = $this->castToString($value);
             }
         }
 
@@ -104,7 +104,7 @@ final class CastPrimitivePropertiesDataPipe implements DataPipe
      * @param  DataProperty $dataProperty Property metadata containing type information
      * @return null|string  The first matching primitive type name, or null if no primitive types match
      */
-    private static function getFirstMatchingType(DataProperty $dataProperty): ?string
+    private function getFirstMatchingType(DataProperty $dataProperty): ?string
     {
         $types = ['string', 'int', 'float', 'bool', 'array'];
 
@@ -126,7 +126,7 @@ final class CastPrimitivePropertiesDataPipe implements DataPipe
      * @param  mixed  $value The value to cast to string
      * @return string The string representation, or empty string for arrays
      */
-    private static function castToString(mixed $value): string
+    private function castToString(mixed $value): string
     {
         // Handle arrays specially to avoid "Array to string conversion" error
         if (is_array($value)) {

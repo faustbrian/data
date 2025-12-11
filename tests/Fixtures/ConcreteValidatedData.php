@@ -16,9 +16,8 @@ use Spatie\LaravelData\Attributes\Validation\Min;
 use Spatie\LaravelData\Attributes\Validation\Required;
 
 /**
- * @internal
- *
  * @author Brian Faust <brian@cline.sh>
+ * @internal
  */
 final class ConcreteValidatedData extends AbstractValidatedData
 {

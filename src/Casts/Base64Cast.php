@@ -30,9 +30,8 @@ use function throw_if;
  * Can also be configured to encode plain strings to base64 format. Non-string
  * values are passed through unchanged.
  *
- * @deprecated Use Base64DecodeCoercer instead
- *
  * @author Brian Faust <brian@cline.sh>
+ * @deprecated Use Base64DecodeCoercer instead
  *
  * @psalm-immutable
  */

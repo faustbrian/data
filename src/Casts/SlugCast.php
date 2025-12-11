@@ -26,9 +26,8 @@ use function is_string;
  * and handles language-specific transliteration rules. Non-string values pass through
  * unchanged. Useful for generating URL slugs from titles or names in data objects.
  *
- * @deprecated This cast provides no logic and can be removed
- *
  * @author Brian Faust <brian@cline.sh>
+ * @deprecated This cast provides no logic and can be removed
  *
  * @psalm-immutable
  */

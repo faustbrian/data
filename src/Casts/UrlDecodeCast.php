@@ -27,9 +27,8 @@ use function urldecode;
  * and original characters. Non-string values pass through unchanged. Useful for processing
  * query parameters or URL components received from HTTP requests.
  *
- * @deprecated Use UrlDecodeCoercer instead
- *
  * @author Brian Faust <brian@cline.sh>
+ * @deprecated Use UrlDecodeCoercer instead
  *
  * @psalm-immutable
  */

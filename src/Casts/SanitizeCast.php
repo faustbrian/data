@@ -47,12 +47,11 @@ use function throw_if;
  * }
  * ```
  *
+ * @author Brian Faust <brian@cline.sh>
  * @deprecated FILTER_SANITIZE_STRING is deprecated as of PHP 8.1. This cast should be
  *             replaced with explicit HTML purification libraries (e.g., HTML Purifier)
  *             or validation casts. Consider using validation instead of sanitization
  *             for security-sensitive data to avoid silent data corruption.
- *
- * @author Brian Faust <brian@cline.sh>
  *
  * @psalm-immutable
  */

@@ -28,6 +28,7 @@ use function is_string;
  * complex validation scenarios with multiple field dependencies. Note that
  * "present" only checks for key existence, not value.
  *
+ * @author Brian Faust <brian@cline.sh>
  * @deprecated This validation rule is incompatible with Spatie Laravel Data's architecture.
  *             The present_* rules check if array keys exist in the input, but Spatie Data
  *             doesn't include optional properties with defaults in the validation payload
@@ -37,8 +38,6 @@ use function is_string;
  *             Use RequiredWithAll instead, which checks for non-empty values rather than key existence.
  *             Spatie Data provides RequiredWithAll out of the box: Spatie\LaravelData\Attributes\Validation\RequiredWithAll
  * @see \Spatie\LaravelData\Attributes\Validation\RequiredWithAll Use this instead
- *
- * @author Brian Faust <brian@cline.sh>
  */
 #[Attribute(Attribute::TARGET_PROPERTY | Attribute::TARGET_PARAMETER)]
 final class PresentWithAll extends StringValidationAttribute implements RequiringRule

@@ -1,77 +1,74 @@
 {
-    "name": "cline/data",
-    "description": "Extended validation attributes, casts, transformers, and type utilities for spatie/laravel-data",
-    "license": "MIT",
-    "keywords": [
-        "laravel",
-        "spatie",
-        "laravel-data",
-        "data",
-        "validation",
-        "casts",
-        "transformers",
-        "dto",
-        "data-transfer-object",
-        "types"
-    ],
-    "authors": [
-        {
-            "name": "Brian Faust",
-            "email": "brian@cline.sh"
-        }
-    ],
-    "require": {
-        "php": "^8.4.0",
-        "saloonphp/xml-wrangler": "^1.4",
-        "spatie/laravel-data": "^4.18.0",
-        "spatie/laravel-package-tools": "^1.92.7",
-        "symfony/yaml": "^7.3.3"
-    },
-    "require-dev": {
-        "cline/php-cs-fixer": "^1.0.4",
-        "driftingly/rector-laravel": "^2.1.0",
-        "ergebnis/composer-normalize": "^2.49@dev",
-        "laravel/pint": "^1.25.1",
-        "orchestra/testbench": "^10.6",
-        "pestphp/pest": "^4.1.2",
-        "pestphp/pest-plugin-laravel": "^4.0",
-        "pestphp/pest-plugin-type-coverage": "^4.0.2",
-        "phpstan/phpstan": "^2.1.31",
-        "rector/rector": "^2.2.3",
-        "symfony/var-dumper": "^7.3.4"
-    },
-    "minimum-stability": "stable",
-    "prefer-stable": true,
-    "autoload": {
-        "psr-4": {
-            "Cline\\Data\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        }
-    },
-    "config": {
-        "allow-plugins": {
-            "ergebnis/composer-normalize": true,
-            "pestphp/pest-plugin": true
-        }
-    },
-    "scripts": {
-        "lint": "vendor/bin/php-cs-fixer fix",
-        "refactor": "rector",
-        "test": [
-            "@test:lint",
-            "@test:type-coverage",
-            "@test:unit",
-            "@test:types",
-            "@test:refactor"
-        ],
-        "test:lint": "vendor/bin/php-cs-fixer check --diff",
-        "test:refactor": "rector --dry-run",
-        "test:type-coverage": "pest --parallel --exactly=100 --type-coverage",
-        "test:types": "phpstan",
-        "test:unit": "pest --parallel --exactly=100 --coverage"
+  "name": "cline/data",
+  "description": "Extended validation attributes, casts, transformers, and type utilities for spatie/laravel-data",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "spatie",
+    "laravel-data",
+    "data",
+    "validation",
+    "casts",
+    "transformers",
+    "dto",
+    "data-transfer-object",
+    "types"
+  ],
+  "authors": [
+    {
+      "name": "Brian Faust",
+      "email": "brian@cline.sh"
     }
+  ],
+  "require": {
+    "php": "^8.5.0",
+    "saloonphp/xml-wrangler": "^1.4.1",
+    "spatie/laravel-data": "^4.18.0",
+    "spatie/laravel-package-tools": "^1.92.7",
+    "symfony/yaml": "^7.4.0"
+  },
+  "require-dev": {
+    "cline/coding-standard": "^1.5.7",
+    "ergebnis/composer-normalize": "^2.48.2",
+    "orchestra/testbench": "^10.8",
+    "pestphp/pest": "^4.1.6",
+    "pestphp/pest-plugin-laravel": "^4.0",
+    "pestphp/pest-plugin-type-coverage": "^4.0.3",
+    "symfony/var-dumper": "^7.4.0"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Cline\\Data\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "ergebnis/composer-normalize": true,
+      "pestphp/pest-plugin": true
+    }
+  },
+  "scripts": {
+    "lint": "ecs check --fix",
+    "refactor": "rector",
+    "test": [
+      "@test:lint",
+      "@test:type-coverage",
+      "@test:unit",
+      "@test:types",
+      "@test:refactor"
+    ],
+    "test:lint": "ecs check",
+    "test:refactor": "rector --dry-run",
+    "test:type-coverage": "pest --parallel --min=90 --type-coverage",
+    "test:types": "phpstan",
+    "test:unit": "pest --parallel --min=90 --coverage"
+  }
 }

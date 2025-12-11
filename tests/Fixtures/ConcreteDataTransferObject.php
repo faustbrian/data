@@ -12,9 +12,8 @@ namespace Tests\Fixtures;
 use Cline\Data\Core\AbstractDataTransferObject;
 
 /**
- * @internal
- *
  * @author Brian Faust <brian@cline.sh>
+ * @internal
  */
 final class ConcreteDataTransferObject extends AbstractDataTransferObject
 {

@@ -27,9 +27,8 @@ use function is_array;
  * associative arrays or arrays with non-sequential keys into standard lists.
  * Non-array values are passed through unchanged.
  *
- * @deprecated Use ArrayToListCoercer instead
- *
  * @author Brian Faust <brian@cline.sh>
+ * @deprecated Use ArrayToListCoercer instead
  *
  * @psalm-immutable
  */

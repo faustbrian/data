@@ -30,9 +30,8 @@ use function json_decode;
  * associative arrays and throws exceptions on malformed JSON for strict validation.
  * Non-string values are passed through unchanged.
  *
- * @deprecated Use JsonDecodeCoercer instead
- *
  * @author Brian Faust <brian@cline.sh>
+ * @deprecated Use JsonDecodeCoercer instead
  *
  * @psalm-immutable
  */

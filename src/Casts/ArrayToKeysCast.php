@@ -27,9 +27,8 @@ use function is_array;
  * unchanged, allowing the cast to gracefully handle edge cases without throwing
  * exceptions.
  *
- * @deprecated Use ArrayToKeysCoercer instead
- *
  * @author Brian Faust <brian@cline.sh>
+ * @deprecated Use ArrayToKeysCoercer instead
  *
  * @psalm-immutable
  */

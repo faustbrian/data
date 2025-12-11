@@ -26,6 +26,7 @@ use Spatie\LaravelData\Support\Validation\RequiringRule;
  * must be present except when the condition is met. Note that "present" only
  * checks for key existence, not value.
  *
+ * @author Brian Faust <brian@cline.sh>
  * @deprecated This validation rule is incompatible with Spatie Laravel Data's architecture.
  *             The present_* rules check if array keys exist in the input, but Spatie Data
  *             doesn't include optional properties with defaults in the validation payload
@@ -35,8 +36,6 @@ use Spatie\LaravelData\Support\Validation\RequiringRule;
  *             Use RequiredUnless instead, which checks for non-empty values rather than key existence.
  *             Spatie Data provides RequiredUnless out of the box: Spatie\LaravelData\Attributes\Validation\RequiredUnless
  * @see \Spatie\LaravelData\Attributes\Validation\RequiredUnless Use this instead
- *
- * @author Brian Faust <brian@cline.sh>
  */
 #[Attribute(Attribute::TARGET_PROPERTY | Attribute::TARGET_PARAMETER)]
 final class PresentUnless extends StringValidationAttribute implements RequiringRule
