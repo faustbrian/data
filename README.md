@@ -96,14 +96,14 @@ If you discover any security related issues, please use the [GitHub security rep
 
 The MIT License. Please see [License File](LICENSE.md) for more information.
 
-[ico-tests]: https://github.com/faustbrian/data/actions/workflows/quality-assurance.yaml/badge.svg
+[ico-tests]: https://git.cline.sh/faustbrian/data/actions/workflows/quality-assurance.yaml/badge.svg
 [ico-version]: https://img.shields.io/packagist/v/cline/data.svg
 [ico-license]: https://img.shields.io/badge/License-MIT-green.svg
 [ico-downloads]: https://img.shields.io/packagist/dt/cline/data.svg
 
-[link-tests]: https://github.com/faustbrian/data/actions
+[link-tests]: https://git.cline.sh/faustbrian/data/actions
 [link-packagist]: https://packagist.org/packages/cline/data
 [link-downloads]: https://packagist.org/packages/cline/data
-[link-security]: https://github.com/faustbrian/data/security
-[link-maintainer]: https://github.com/faustbrian
+[link-security]: https://git.cline.sh/faustbrian/data/security
+[link-maintainer]: https://git.cline.sh/faustbrian
 [link-contributors]: ../../contributors
